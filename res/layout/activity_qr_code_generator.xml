@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circle">
+
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/home"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="#29020D"
+        android:textColorHint="#FFC107"
+        android:layout_below="@id/l1"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter text to generate code"
+        android:inputType="text" />
+
+    <Spinner
+        android:id="@+id/spFormat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etInput"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/code_formats" />
+
+    <Button
+        android:id="@+id/btnGenerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spFormat"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#FFC107"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:text="GENERATE CODE" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/btnGenerate"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/orange_below">
+
+        <ImageView
+            android:id="@+id/ivCode"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
+</RelativeLayout>

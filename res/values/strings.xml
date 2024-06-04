@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">QR_App</string>
+
+    <string-array name="code_formats">
+        <item>QR Code</item>
+        <item>Barcode</item>
+    </string-array>
+</resources>
+
